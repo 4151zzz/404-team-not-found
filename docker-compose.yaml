@@ -1,2 +1,4 @@
 include:
  -  pgadmin.yaml
+  - db.yaml
+  - app.yaml
