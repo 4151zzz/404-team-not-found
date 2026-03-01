@@ -1,0 +1,9 @@
+services:
+    404-team-pgadmin:
+        image: dpage/pgadmin4
+        container_name: 404-team-pgadmin
+        environment:
+          PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+          PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+        ports:
+          - "${PGADMIN_PORT}:82"
