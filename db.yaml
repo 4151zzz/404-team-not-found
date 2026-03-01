@@ -1,0 +1,10 @@
+services:
+  404-team-db:
+    image: postgres:latest
+    container_name: 404-team-db
+    ports:
+      - ${DATABASE_PORT}:5432
+    environment:
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASS}
+      POSTGRES_DB: ${DATABASE_NAME}
