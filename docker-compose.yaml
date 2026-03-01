@@ -1,4 +1,6 @@
 include:
- -  pgadmin.yaml
+  - pgadmin.yaml
   - db.yaml
   - app.yaml
+  - nginx.yaml
+  
