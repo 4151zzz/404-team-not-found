@@ -1,2 +1,3 @@
 include:
   - db.yaml
+  - app.yaml
