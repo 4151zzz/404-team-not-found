@@ -2,6 +2,8 @@ services:
   404-team-application:
     image: prawee/strapi:latest
     container_name: 404-team-application
+    depends_on:
+      - 404-team-db
     environment:
       DATABASE_CLIENT: ${APP_DB_CLIENT}
       DATABASE_NAME: ${APP_DB_NAME}
